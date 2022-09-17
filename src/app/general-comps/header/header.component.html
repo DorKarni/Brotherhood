@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default">
+  <div class="containar-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+      <i class="bi bi-suit-diamond-fill"></i>
+      <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+      </button>
+      <img
+        src="https://yt3.ggpht.com/ytc/AMLnZu-V5qDCGJv8UxXKqHAlhAIjxPh0js_Q-dRclooB5w=s900-c-k-c0x00ffffff-no-rj"
+        alt="Brotherhood"
+      />
+      <a href="#" class="navbar-brand">Brotherhood </a>
+    </div>
+    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Our Vision</a></li>
+        <li><a href="#">Learn More</a></li>
+        <li><a href="#">How to Become a Brother</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
